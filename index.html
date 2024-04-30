@@ -4,29 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The to do list</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- My script -->
+    <script defer src="assets/js/script.js"></script>
+     <!-- Font Awesome -->
+     <script src="https://kit.fontawesome.com/61be3e4cc1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header> 
         <h1> My to do list</h1>
     </header>
     <main>
-        <ul>
-            <li>Faire les courses</li>
-            <li>Nettoyer la maison</li>
-            <li>Planifier les repas de la semaine</li>
-            <li>Repassage</li>
-            <li>Aller chercher les vêtements au nettoyage à sec</li>
-            <li>Finir les exerices en JavaScript</li>
-            <li>Mette à jour l'agenda du mois</li>
-            <li>Prendre rendez-vous chez le dentiste</li>
-            <li>Aller à la salle de sport</li>
-            <li>Planifier les prochaines vacances</li>
-            <li>Organiser sortie aves les filles</li>
-            <li>Préparer la fête surprise d'anniversaire</li>
-            <li>Acheter cadeau d'anniversaire</li>
-            <li>Arroser les plantes</li>
-        </ul>
+        <div>
+            <input type="text" name="tasks" id="tasks" placeholder="add a task">
+            <input onclick="addTask()" type="submit" value="add task" class="add-btn">
+            
+        </div>
+        <div class="task-list">
+            <ul class="ul-list">
+            </ul>
+        </div>
     </main>
-    <footer>&#169; DK</footer>
+    <footer>
+        <div>
+            <a href="https://github.com/Dj3y/the-to-do-list.git" target="_blank"><img src="assets/images/github.svg" alt="github icon"></a>
+        </div>
+    </footer>
 </body>
 </html>
